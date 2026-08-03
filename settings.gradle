@@ -1,0 +1,2 @@
+rootProject.name = "SuryaLiveStudio"
+include ':app'
