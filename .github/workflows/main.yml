@@ -14,17 +14,15 @@ jobs:
         run: |
           pwd
           ls -la
+          find . -name gradlew
 
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '21'
 
-      - - name: Show files
-  run: |
-    pwd
-    ls -la
-    find . -name gradlew
+      - name: Grant execute permission
+        run: chmod +x ./gradlew
 
       - name: Build APK
         run: ./gradlew assembleDebug
