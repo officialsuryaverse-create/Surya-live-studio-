@@ -15,4 +15,4 @@ class MainActivity : Activity() {
 
         setContentView(tv)
     }
-}cd ../../res/layout
+}
